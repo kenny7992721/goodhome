@@ -1,0 +1,808 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Nov 01, 2021 at 23:19:44 CST
+ncverilog
+	testfixture.v
+	CONV_syn.v
+	-v
+	tsmc13_neg.v
+	+define+SDF
+Recompiling... reason: file './CONV_syn.sdf' is newer than expected.
+	expected: Mon Nov  1 23:10:42 2021
+	actual:   Mon Nov  1 23:19:06 2021
+		Caching library 'worklib' ....... Done
+		Caching library 'tsmc13_neg' ....... Done
+	Elaborating the design hierarchy:
+  CONV_DW_cmp_0 gte_456 ( .A(mp_result_temp_0), .B(mp_result_temp_1), .TC(1'b0), .GE_LT(1'b1), .GE_GT_EQ(1'b1), .GE_LT_GT_LE(N1824) );
+                      |
+ncelab: *W,CUVWSP (./CONV_syn.v,3017|22): 1 output port was not connected:
+ncelab: (./CONV_syn.v,8): EQ_NE
+
+  CONV_DW_cmp_1 gte_455 ( .A({\mp_kernel[2][19] , \mp_kernel[2][18] , 
+                      |
+ncelab: *W,CUVWSP (./CONV_syn.v,3018|22): 1 output port was not connected:
+ncelab: (./CONV_syn.v,98): EQ_NE
+
+  CONV_DW_cmp_2 gte_454 ( .A({\mp_kernel[0][19] , \mp_kernel[0][18] , 
+                      |
+ncelab: *W,CUVWSP (./CONV_syn.v,3033|22): 1 output port was not connected:
+ncelab: (./CONV_syn.v,188): EQ_NE
+
+  CONV_DW01_add_23 add_7_root_add_0_root_add_359_8 ( .A({
+                                                 |
+ncelab: *W,CUVWSP (./CONV_syn.v,3084|49): 1 output port was not connected:
+ncelab: (./CONV_syn.v,1378): CO
+
+  CONV_DW01_add_22 add_6_root_add_0_root_add_359_8 ( .A({
+                                                 |
+ncelab: *W,CUVWSP (./CONV_syn.v,3114|49): 1 output port was not connected:
+ncelab: (./CONV_syn.v,1460): CO
+
+  CONV_DW01_add_21 add_5_root_add_0_root_add_359_8 ( .A({
+                                                 |
+ncelab: *W,CUVWSP (./CONV_syn.v,3144|49): 1 output port was not connected:
+ncelab: (./CONV_syn.v,1542): CO
+
+  CONV_DW01_add_20 add_2_root_add_0_root_add_359_8 ( .A({N1325, N1324, N1323, 
+                                                 |
+ncelab: *W,CUVWSP (./CONV_syn.v,3174|49): 1 output port was not connected:
+ncelab: (./CONV_syn.v,1624): CO
+
+  CONV_DW01_add_19 add_4_root_add_0_root_add_359_8 ( .A({
+                                                 |
+ncelab: *W,CUVWSP (./CONV_syn.v,3186|49): 1 output port was not connected:
+ncelab: (./CONV_syn.v,1706): CO
+
+  CONV_DW01_add_18 add_3_root_add_0_root_add_359_8 ( .A({
+                                                 |
+ncelab: *W,CUVWSP (./CONV_syn.v,3216|49): 1 output port was not connected:
+ncelab: (./CONV_syn.v,1788): CO
+
+  CONV_DW01_add_17 add_1_root_add_0_root_add_359_8 ( .A({N1181, N1180, N1179, 
+                                                 |
+ncelab: *W,CUVWSP (./CONV_syn.v,3237|49): 1 output port was not connected:
+ncelab: (./CONV_syn.v,1870): CO
+
+  CONV_DW01_add_16 add_0_root_add_0_root_add_359_8 ( .A({N1217, N1216, N1215, 
+                                                 |
+ncelab: *W,CUVWSP (./CONV_syn.v,3249|49): 1 output port was not connected:
+ncelab: (./CONV_syn.v,1952): CO
+
+  CONV_DW01_add_15 add_34_2 ( .A(kernel_y), .B(kernel_shift_y), .CI(1'b0), 
+                          |
+ncelab: *W,CUVWSP (./CONV_syn.v,3267|26): 1 output port was not connected:
+ncelab: (./CONV_syn.v,2034): CO
+
+  CONV_DW01_add_14 add_1_root_add_0_root_add_34_3 ( .A(kernel_shift_x), .B(
+                                                |
+ncelab: *W,CUVWSP (./CONV_syn.v,3270|48): 1 output port was not connected:
+ncelab: (./CONV_syn.v,2068): CO
+
+  CONV_DW01_add_13 add_0_root_add_0_root_add_34_3 ( .A({N100, N99, N98, N97, 
+                                                |
+ncelab: *W,CUVWSP (./CONV_syn.v,3273|48): 1 output port was not connected:
+ncelab: (./CONV_syn.v,2104): CO
+
+  CONV_DW01_add_12 add_33 ( .A(kernel_x), .B({N87, N86, N85, N84, N83, N82, 
+                        |
+ncelab: *W,CUVWSP (./CONV_syn.v,3279|24): 1 output port was not connected:
+ncelab: (./CONV_syn.v,2162): CO
+
+  CONV_DW01_add_26 add_64_2 ( .A(mp_kernel_y[5:0]), .B({mp_kernel_shift_y[5:1], 
+                          |
+ncelab: *W,CUVWSP (./CONV_syn.v,3282|26): 1 output port was not connected:
+ncelab: (./CONV_syn.v,2198): CO
+
+  CONV_DW01_add_25 add_1_root_add_0_root_add_64_3 ( .A(mp_kernel_x[11:0]), .B(
+                                                |
+ncelab: *W,CUVWSP (./CONV_syn.v,3284|48): 1 output port was not connected:
+ncelab: (./CONV_syn.v,2220): CO
+
+  CONV_DW01_add_28 add_370 ( .A(kernel_shift_y[10:0]), .B(kernel_y[10:0]), 
+                         |
+ncelab: *W,CUVWSP (./CONV_syn.v,3287|25): 1 output port was not connected:
+ncelab: (./CONV_syn.v,2254): CO
+
+  CONV_DW01_sub_0 sub_0_root_sub_0_root_sub_370_2 ( .A(padding_position[11:0]), 
+                                                |
+ncelab: *W,CUVWSP (./CONV_syn.v,3290|48): 1 output port was not connected:
+ncelab: (./CONV_syn.v,2286): CO
+
+  CONV_DW_div_uns_6 r627 ( .a(padding_position), .b({1'b1, 1'b0, 1'b0, 1'b0, 
+                       |
+ncelab: *W,CUVWSP (./CONV_syn.v,3295|23): 2 output ports were not connected:
+ncelab: (./CONV_syn.v,2322): quotient
+ncelab: (./CONV_syn.v,2322): divide_by_0
+
+  DFFX1 \next_state_reg[2]  ( .D(N169), .CK(clk), .QN(n1983) );
+                          |
+ncelab: *W,CUVWSP (./CONV_syn.v,3297|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[35]  ( .D(n1372), .CK(clk), .QN(n1927) );
+                         |
+ncelab: *W,CUVWSP (./CONV_syn.v,3298|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[34]  ( .D(n1373), .CK(clk), .QN(n1925) );
+                         |
+ncelab: *W,CUVWSP (./CONV_syn.v,3299|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[33]  ( .D(n1374), .CK(clk), .QN(n1923) );
+                         |
+ncelab: *W,CUVWSP (./CONV_syn.v,3300|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[32]  ( .D(n1375), .CK(clk), .QN(n1921) );
+                         |
+ncelab: *W,CUVWSP (./CONV_syn.v,3301|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[31]  ( .D(n1376), .CK(clk), .QN(n1919) );
+                         |
+ncelab: *W,CUVWSP (./CONV_syn.v,3302|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[30]  ( .D(n1377), .CK(clk), .QN(n1917) );
+                         |
+ncelab: *W,CUVWSP (./CONV_syn.v,3303|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[29]  ( .D(n1378), .CK(clk), .QN(n1915) );
+                         |
+ncelab: *W,CUVWSP (./CONV_syn.v,3304|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[28]  ( .D(n1379), .CK(clk), .QN(n1913) );
+                         |
+ncelab: *W,CUVWSP (./CONV_syn.v,3305|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[27]  ( .D(n1380), .CK(clk), .QN(n1911) );
+                         |
+ncelab: *W,CUVWSP (./CONV_syn.v,3306|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[26]  ( .D(n1381), .CK(clk), .QN(n1909) );
+                         |
+ncelab: *W,CUVWSP (./CONV_syn.v,3307|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[25]  ( .D(n1382), .CK(clk), .QN(n1907) );
+                         |
+ncelab: *W,CUVWSP (./CONV_syn.v,3308|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[24]  ( .D(n1383), .CK(clk), .QN(n1905) );
+                         |
+ncelab: *W,CUVWSP (./CONV_syn.v,3309|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[23]  ( .D(n1384), .CK(clk), .QN(n1903) );
+                         |
+ncelab: *W,CUVWSP (./CONV_syn.v,3310|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[22]  ( .D(n1385), .CK(clk), .QN(n1901) );
+                         |
+ncelab: *W,CUVWSP (./CONV_syn.v,3311|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[21]  ( .D(n1386), .CK(clk), .QN(n1899) );
+                         |
+ncelab: *W,CUVWSP (./CONV_syn.v,3312|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[20]  ( .D(n1387), .CK(clk), .QN(n1897) );
+                         |
+ncelab: *W,CUVWSP (./CONV_syn.v,3313|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[19]  ( .D(n1388), .CK(clk), .QN(n1895) );
+                         |
+ncelab: *W,CUVWSP (./CONV_syn.v,3314|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[18]  ( .D(n1389), .CK(clk), .QN(n1893) );
+                         |
+ncelab: *W,CUVWSP (./CONV_syn.v,3315|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[17]  ( .D(n1390), .CK(clk), .QN(n1891) );
+                         |
+ncelab: *W,CUVWSP (./CONV_syn.v,3316|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[16]  ( .D(n1391), .CK(clk), .QN(n1889) );
+                         |
+ncelab: *W,CUVWSP (./CONV_syn.v,3317|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[15]  ( .D(n1392), .CK(clk), .QN(n1887) );
+                         |
+ncelab: *W,CUVWSP (./CONV_syn.v,3318|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[14]  ( .D(n1393), .CK(clk), .QN(n1885) );
+                         |
+ncelab: *W,CUVWSP (./CONV_syn.v,3319|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[13]  ( .D(n1394), .CK(clk), .QN(n1883) );
+                         |
+ncelab: *W,CUVWSP (./CONV_syn.v,3320|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[12]  ( .D(n1395), .CK(clk), .QN(n1881) );
+                         |
+ncelab: *W,CUVWSP (./CONV_syn.v,3321|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[11]  ( .D(n1396), .CK(clk), .QN(n1879) );
+                         |
+ncelab: *W,CUVWSP (./CONV_syn.v,3322|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[10]  ( .D(n1397), .CK(clk), .QN(n1877) );
+                         |
+ncelab: *W,CUVWSP (./CONV_syn.v,3323|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[9]  ( .D(n1398), .CK(clk), .QN(n1875) );
+                        |
+ncelab: *W,CUVWSP (./CONV_syn.v,3324|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[8]  ( .D(n1399), .CK(clk), .QN(n1873) );
+                        |
+ncelab: *W,CUVWSP (./CONV_syn.v,3325|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[7]  ( .D(n1400), .CK(clk), .QN(n1871) );
+                        |
+ncelab: *W,CUVWSP (./CONV_syn.v,3326|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[6]  ( .D(n1401), .CK(clk), .QN(n1869) );
+                        |
+ncelab: *W,CUVWSP (./CONV_syn.v,3327|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[5]  ( .D(n1402), .CK(clk), .QN(n1867) );
+                        |
+ncelab: *W,CUVWSP (./CONV_syn.v,3328|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[4]  ( .D(n1403), .CK(clk), .QN(n1865) );
+                        |
+ncelab: *W,CUVWSP (./CONV_syn.v,3329|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[3]  ( .D(n1404), .CK(clk), .QN(n1863) );
+                        |
+ncelab: *W,CUVWSP (./CONV_syn.v,3330|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[2]  ( .D(n1405), .CK(clk), .QN(n1861) );
+                        |
+ncelab: *W,CUVWSP (./CONV_syn.v,3331|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[1]  ( .D(n1406), .CK(clk), .QN(n1859) );
+                        |
+ncelab: *W,CUVWSP (./CONV_syn.v,3332|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \conv_mul_reg[0]  ( .D(n1407), .CK(clk), .QN(n1855) );
+                        |
+ncelab: *W,CUVWSP (./CONV_syn.v,3333|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \next_state_reg[0]  ( .D(N167), .CK(clk), .QN(n1991) );
+                          |
+ncelab: *W,CUVWSP (./CONV_syn.v,3334|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  EDFFX1 \conv_result_reg[15]  ( .D(N1398), .E(N1145), .CK(clk), .QN(n562) );
+                             |
+ncelab: *W,CUVWSP (./CONV_syn.v,3451|29): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): Q
+
+  DFFTRX1 \kernel_position_de1_reg[8]  ( .D(kernel_position[8]), .RN(n2009), 
+                                     |
+ncelab: *W,CUVWSP (./CONV_syn.v,3476|37): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \kernel_position_de1_reg[9]  ( .D(kernel_position[9]), .RN(n2009), 
+                                     |
+ncelab: *W,CUVWSP (./CONV_syn.v,3478|37): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \kernel_position_de1_reg[7]  ( .D(kernel_position[7]), .RN(n2009), 
+                                     |
+ncelab: *W,CUVWSP (./CONV_syn.v,3480|37): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \kernel_position_de1_reg[5]  ( .D(kernel_position[5]), .RN(n2009), 
+                                     |
+ncelab: *W,CUVWSP (./CONV_syn.v,3482|37): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \kernel_position_de1_reg[10]  ( .D(kernel_position[10]), .RN(n2009), 
+                                      |
+ncelab: *W,CUVWSP (./CONV_syn.v,3484|38): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \kernel_position_de1_reg[6]  ( .D(kernel_position[6]), .RN(n2009), 
+                                     |
+ncelab: *W,CUVWSP (./CONV_syn.v,3486|37): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \kernel_position_de1_reg[11]  ( .D(kernel_position[11]), .RN(n2009), 
+                                      |
+ncelab: *W,CUVWSP (./CONV_syn.v,3488|38): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \kernel_position_de1_reg[4]  ( .D(kernel_position[4]), .RN(n2009), 
+                                     |
+ncelab: *W,CUVWSP (./CONV_syn.v,3490|37): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): Q
+
+  DFFTRX1 \kernel_position_de1_reg[12]  ( .D(kernel_position[12]), .RN(n2009), 
+                                      |
+ncelab: *W,CUVWSP (./CONV_syn.v,3492|38): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): Q
+
+  DFFTRX1 \padding_picture_reg[19]  ( .D(idata[19]), .RN(n650), .CK(clk), .Q(
+                                  |
+ncelab: *W,CUVWSP (./CONV_syn.v,4036|34): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \padding_picture_reg[18]  ( .D(idata[18]), .RN(n650), .CK(clk), .Q(
+                                  |
+ncelab: *W,CUVWSP (./CONV_syn.v,4046|34): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \padding_picture_reg[16]  ( .D(idata[16]), .RN(n650), .CK(clk), .Q(
+                                  |
+ncelab: *W,CUVWSP (./CONV_syn.v,4079|34): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \padding_picture_reg[15]  ( .D(idata[15]), .RN(n650), .CK(clk), .Q(
+                                  |
+ncelab: *W,CUVWSP (./CONV_syn.v,4081|34): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \padding_picture_reg[17]  ( .D(idata[17]), .RN(n650), .CK(clk), .Q(
+                                  |
+ncelab: *W,CUVWSP (./CONV_syn.v,4091|34): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \padding_picture_reg[13]  ( .D(idata[13]), .RN(n1709), .CK(clk), .Q(
+                                  |
+ncelab: *W,CUVWSP (./CONV_syn.v,4095|34): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \padding_picture_reg[12]  ( .D(idata[12]), .RN(n1709), .CK(clk), .Q(
+                                  |
+ncelab: *W,CUVWSP (./CONV_syn.v,4097|34): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \padding_picture_reg[14]  ( .D(idata[14]), .RN(n1709), .CK(clk), .Q(
+                                  |
+ncelab: *W,CUVWSP (./CONV_syn.v,4099|34): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \state_reg[1]  ( .D(\next_state[1] ), .RN(n2009), .CK(clk), .Q(
+                       |
+ncelab: *W,CUVWSP (./CONV_syn.v,4102|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \padding_picture_reg[9]  ( .D(idata[9]), .RN(n1709), .CK(clk), .Q(
+                                 |
+ncelab: *W,CUVWSP (./CONV_syn.v,4104|33): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \padding_picture_reg[10]  ( .D(idata[10]), .RN(n1709), .CK(clk), .Q(
+                                  |
+ncelab: *W,CUVWSP (./CONV_syn.v,4106|34): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \padding_picture_reg[11]  ( .D(idata[11]), .RN(n1709), .CK(clk), .Q(
+                                  |
+ncelab: *W,CUVWSP (./CONV_syn.v,4108|34): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \padding_picture_reg[7]  ( .D(idata[7]), .RN(n1709), .CK(clk), .Q(
+                                 |
+ncelab: *W,CUVWSP (./CONV_syn.v,4115|33): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \padding_picture_reg[6]  ( .D(idata[6]), .RN(n1709), .CK(clk), .Q(
+                                 |
+ncelab: *W,CUVWSP (./CONV_syn.v,4117|33): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \padding_picture_reg[8]  ( .D(idata[8]), .RN(n1709), .CK(clk), .Q(
+                                 |
+ncelab: *W,CUVWSP (./CONV_syn.v,4119|33): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \padding_picture_reg[0]  ( .D(idata[0]), .RN(n1709), .CK(clk), .Q(
+                                 |
+ncelab: *W,CUVWSP (./CONV_syn.v,4121|33): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \padding_picture_reg[4]  ( .D(idata[4]), .RN(n1709), .CK(clk), .Q(
+                                 |
+ncelab: *W,CUVWSP (./CONV_syn.v,4123|33): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \padding_picture_reg[3]  ( .D(idata[3]), .RN(n1709), .CK(clk), .Q(
+                                 |
+ncelab: *W,CUVWSP (./CONV_syn.v,4125|33): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \padding_picture_reg[5]  ( .D(idata[5]), .RN(n1709), .CK(clk), .Q(
+                                 |
+ncelab: *W,CUVWSP (./CONV_syn.v,4127|33): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \padding_picture_reg[1]  ( .D(idata[1]), .RN(n1709), .CK(clk), .Q(
+                                 |
+ncelab: *W,CUVWSP (./CONV_syn.v,4129|33): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \padding_picture_reg[2]  ( .D(idata[2]), .RN(n1709), .CK(clk), .Q(
+                                 |
+ncelab: *W,CUVWSP (./CONV_syn.v,4131|33): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \kernel_x_reg[12]  ( .D(N383), .RN(n1592), .CK(clk), .Q(kernel_x[12]) );
+                           |
+ncelab: *W,CUVWSP (./CONV_syn.v,4327|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \kernel_x_reg[11]  ( .D(N382), .RN(n1592), .CK(clk), .Q(kernel_x[11]) );
+                           |
+ncelab: *W,CUVWSP (./CONV_syn.v,4328|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \kernel_x_reg[9]  ( .D(N380), .RN(n1592), .CK(clk), .Q(kernel_x[9])
+                          |
+ncelab: *W,CUVWSP (./CONV_syn.v,4330|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \kernel_x_reg[7]  ( .D(N378), .RN(n1592), .CK(clk), .Q(kernel_x[7])
+                          |
+ncelab: *W,CUVWSP (./CONV_syn.v,4332|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \kernel_x_reg[8]  ( .D(N379), .RN(n1592), .CK(clk), .Q(kernel_x[8])
+                          |
+ncelab: *W,CUVWSP (./CONV_syn.v,4334|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \kernel_x_reg[10]  ( .D(N381), .RN(n1592), .CK(clk), .Q(kernel_x[10]) );
+                           |
+ncelab: *W,CUVWSP (./CONV_syn.v,4336|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \kernel_x_reg[6]  ( .D(N377), .RN(n1592), .CK(clk), .Q(kernel_x[6])
+                          |
+ncelab: *W,CUVWSP (./CONV_syn.v,4349|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \kernel_x_reg[5]  ( .D(N376), .RN(n1592), .CK(clk), .Q(kernel_x[5])
+                          |
+ncelab: *W,CUVWSP (./CONV_syn.v,4351|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \kernel_x_reg[3]  ( .D(N374), .RN(n1592), .CK(clk), .Q(kernel_x[3])
+                          |
+ncelab: *W,CUVWSP (./CONV_syn.v,4354|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \kernel_x_reg[4]  ( .D(N375), .RN(n1592), .CK(clk), .Q(kernel_x[4])
+                          |
+ncelab: *W,CUVWSP (./CONV_syn.v,4356|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \kernel_x_reg[2]  ( .D(N373), .RN(n1592), .CK(clk), .Q(kernel_x[2])
+                          |
+ncelab: *W,CUVWSP (./CONV_syn.v,4367|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+  DFFTRX1 \csel_reg[1]  ( .D(n823), .RN(n2007), .CK(clk), .QN(n2004) );
+                      |
+ncelab: *W,CUVWSP (./CONV_syn.v,4434|22): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): Q
+
+  EDFFXL \conv_result_reg[17]  ( .D(N1400), .E(N1145), .CK(clk), .Q(N1441) );
+                             |
+ncelab: *W,CUVWSP (./CONV_syn.v,4437|29): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19722): QN
+
+  EDFFXL \conv_result_reg[18]  ( .D(N1401), .E(N1145), .CK(clk), .Q(N1442) );
+                             |
+ncelab: *W,CUVWSP (./CONV_syn.v,4438|29): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19722): QN
+
+  EDFFXL \conv_result_reg[19]  ( .D(N1402), .E(N1145), .CK(clk), .Q(N1443) );
+                             |
+ncelab: *W,CUVWSP (./CONV_syn.v,4439|29): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19722): QN
+
+  EDFFXL \conv_result_reg[35]  ( .D(N1418), .E(N1145), .CK(clk), .Q(
+                             |
+ncelab: *W,CUVWSP (./CONV_syn.v,4440|29): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19722): QN
+
+  EDFFX1 \conv_result_reg[31]  ( .D(N1414), .E(N1145), .CK(clk), .Q(
+                             |
+ncelab: *W,CUVWSP (./CONV_syn.v,4442|29): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): QN
+
+  EDFFX1 \conv_result_reg[32]  ( .D(N1415), .E(N1145), .CK(clk), .Q(
+                             |
+ncelab: *W,CUVWSP (./CONV_syn.v,4444|29): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): QN
+
+  EDFFX1 \conv_result_reg[33]  ( .D(N1416), .E(N1145), .CK(clk), .Q(
+                             |
+ncelab: *W,CUVWSP (./CONV_syn.v,4446|29): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): QN
+
+  EDFFX1 \conv_result_reg[34]  ( .D(N1417), .E(N1145), .CK(clk), .Q(
+                             |
+ncelab: *W,CUVWSP (./CONV_syn.v,4448|29): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): QN
+
+  EDFFX1 \conv_result_reg[21]  ( .D(N1404), .E(N1145), .CK(clk), .Q(
+                             |
+ncelab: *W,CUVWSP (./CONV_syn.v,4450|29): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): QN
+
+  EDFFX1 \conv_result_reg[22]  ( .D(N1405), .E(N1145), .CK(clk), .Q(
+                             |
+ncelab: *W,CUVWSP (./CONV_syn.v,4452|29): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): QN
+
+  EDFFX1 \conv_result_reg[23]  ( .D(N1406), .E(N1145), .CK(clk), .Q(
+                             |
+ncelab: *W,CUVWSP (./CONV_syn.v,4454|29): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): QN
+
+  EDFFX1 \conv_result_reg[26]  ( .D(N1409), .E(N1145), .CK(clk), .Q(
+                             |
+ncelab: *W,CUVWSP (./CONV_syn.v,4456|29): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): QN
+
+  EDFFX1 \conv_result_reg[27]  ( .D(N1410), .E(N1145), .CK(clk), .Q(
+                             |
+ncelab: *W,CUVWSP (./CONV_syn.v,4458|29): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): QN
+
+  EDFFX1 \conv_result_reg[29]  ( .D(N1412), .E(N1145), .CK(clk), .Q(
+                             |
+ncelab: *W,CUVWSP (./CONV_syn.v,4460|29): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): QN
+
+  EDFFX1 \conv_result_reg[30]  ( .D(N1413), .E(N1145), .CK(clk), .Q(
+                             |
+ncelab: *W,CUVWSP (./CONV_syn.v,4462|29): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): QN
+
+  EDFFX1 \conv_result_reg[24]  ( .D(N1407), .E(N1145), .CK(clk), .Q(
+                             |
+ncelab: *W,CUVWSP (./CONV_syn.v,4464|29): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): QN
+
+  EDFFX1 \conv_result_reg[25]  ( .D(N1408), .E(N1145), .CK(clk), .Q(
+                             |
+ncelab: *W,CUVWSP (./CONV_syn.v,4466|29): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): QN
+
+  EDFFX1 \conv_result_reg[28]  ( .D(N1411), .E(N1145), .CK(clk), .Q(
+                             |
+ncelab: *W,CUVWSP (./CONV_syn.v,4468|29): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): QN
+
+  DFFTRX2 \kernel_position_de1_reg[3]  ( .D(kernel_position[3]), .RN(n2009), 
+                                     |
+ncelab: *W,CUVWSP (./CONV_syn.v,4472|37): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19586): Q
+
+  DFFTRX1 \kernel_x_reg[0]  ( .D(N371), .RN(n1592), .CK(clk), .Q(kernel_x[0])
+                          |
+ncelab: *W,CUVWSP (./CONV_syn.v,4474|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): QN
+
+	Reading SDF file from location "/home/User/hy/cic2019/CONV_syn.sdf"
+	Compiled SDF file "CONV_syn.sdf.X" older than source SDF file "/home/User/hy/cic2019/CONV_syn.sdf".
+	Recompiling.
+	Writing compiled SDF file to "CONV_syn.sdf.X".
+	Annotating SDF timing data:
+		Compiled SDF file:     CONV_syn.sdf.X
+		Log file:              
+		Backannotation scope:  testfixture.u_CONV
+		Configuration file:    
+		MTM control:           
+		Scale factors:         
+		Scale type:            
+	Annotation completed successfully...
+	SDF statistics: No. of Pathdelays = 16615  Annotated = 100.00% -- No. of Tchecks = 3326  Annotated = 90.32% 
+				        Total 	   Annotated	  Percentage
+		 Path Delays	       16615	       16615	      100.00
+		       $hold	         160	           0	        0.00
+		      $width	        1512	        1512	      100.00
+		  $setuphold	        1654	        1492	       90.21
+  assign n435 = a[17];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,597|7): The interconnect source testfixture.u_CONV.\padding_picture_reg[17] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r628.U947.A.  The port annotation will still occur.
+  assign n458 = a[14];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,598|7): The interconnect source testfixture.u_CONV.\padding_picture_reg[14] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r628.U946.A.  The port annotation will still occur.
+  assign n481 = a[11];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,599|7): The interconnect source testfixture.u_CONV.\padding_picture_reg[11] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r628.U944.A.  The port annotation will still occur.
+  assign n504 = a[8];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,600|7): The interconnect source testfixture.u_CONV.\padding_picture_reg[8] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r628.U939.A.  The port annotation will still occur.
+  assign n551 = a[2];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,602|7): The interconnect source testfixture.u_CONV.\padding_picture_reg[2] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r628.U938.A.  The port annotation will still occur.
+  assign n527 = a[5];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,601|7): The interconnect source testfixture.u_CONV.\padding_picture_reg[5] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r628.U935.A.  The port annotation will still occur.
+  assign n551 = a[2];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,602|7): The interconnect source testfixture.u_CONV.\padding_picture_reg[2] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r628.U1000.A.  The port annotation will still occur.
+  assign n551 = a[2];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,602|7): The interconnect source testfixture.u_CONV.\padding_picture_reg[2] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r628.U991.A.  The port annotation will still occur.
+  assign n551 = a[2];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,602|7): The interconnect source testfixture.u_CONV.\padding_picture_reg[2] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r628.U988.A.  The port annotation will still occur.
+  assign n551 = a[2];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,602|7): The interconnect source testfixture.u_CONV.\padding_picture_reg[2] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r628.U985.A.  The port annotation will still occur.
+  assign n551 = a[2];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,602|7): The interconnect source testfixture.u_CONV.\padding_picture_reg[2] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r628.U982.A.  The port annotation will still occur.
+  assign \u_div/SumTmp[0][0]  = a[0];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,2362|7): The interconnect source testfixture.u_CONV.add_0_root_add_0_root_add_34_3.U3.Y is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r627.U142.A.  The port annotation will still occur.
+  assign \u_div/SumTmp[0][0]  = a[0];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,2362|7): The interconnect source testfixture.u_CONV.add_0_root_add_0_root_add_34_3.U3.Y is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r627.U142.B.  The port annotation will still occur.
+  assign \u_div/PartRem[9][4]  = a[12];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,2373|7): The interconnect source testfixture.u_CONV.add_0_root_add_0_root_add_34_3.U1_12.Y is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r627.U143.A.  The port annotation will still occur.
+  assign \u_div/PartRem[8][1]  = a[8];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,2369|7): The interconnect source testfixture.u_CONV.add_0_root_add_0_root_add_34_3.U1_8.S is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r627.U140.A.  The port annotation will still occur.
+  assign \u_div/PartRem[9][2]  = a[10];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,2371|7): The interconnect source testfixture.u_CONV.add_0_root_add_0_root_add_34_3.U1_10.S is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r627.U139.A.  The port annotation will still occur.
+  assign \u_div/PartRem[9][1]  = a[9];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,2370|7): The interconnect source testfixture.u_CONV.add_0_root_add_0_root_add_34_3.U1_9.S is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r627.U49.A.  The port annotation will still occur.
+  assign \u_div/PartRem[9][1]  = a[9];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,2370|7): The interconnect source testfixture.u_CONV.add_0_root_add_0_root_add_34_3.U1_9.S is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r627.U138.A.  The port annotation will still occur.
+  assign \u_div/PartRem[8][1]  = a[8];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,2369|7): The interconnect source testfixture.u_CONV.add_0_root_add_0_root_add_34_3.U1_8.S is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r627.U137.A.  The port annotation will still occur.
+  assign \u_div/SumTmp[3][0]  = a[3];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,2365|7): The interconnect source testfixture.u_CONV.add_0_root_add_0_root_add_34_3.U1_3.S is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r627.U84.A.  The port annotation will still occur.
+  assign \u_div/SumTmp[3][0]  = a[3];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,2365|7): The interconnect source testfixture.u_CONV.add_0_root_add_0_root_add_34_3.U1_3.S is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r627.U84.B.  The port annotation will still occur.
+  assign \u_div/SumTmp[4][0]  = a[4];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,2366|7): The interconnect source testfixture.u_CONV.add_0_root_add_0_root_add_34_3.U1_4.S is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r627.U85.A.  The port annotation will still occur.
+  assign \u_div/SumTmp[4][0]  = a[4];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,2366|7): The interconnect source testfixture.u_CONV.add_0_root_add_0_root_add_34_3.U1_4.S is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r627.U85.B.  The port annotation will still occur.
+  assign \u_div/PartRem[9][1]  = a[9];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,2370|7): The interconnect source testfixture.u_CONV.add_0_root_add_0_root_add_34_3.U1_9.S is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r627.U15.A.  The port annotation will still occur.
+  assign \u_div/SumTmp[5][0]  = a[5];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,2367|7): The interconnect source testfixture.u_CONV.add_0_root_add_0_root_add_34_3.U1_5.S is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r627.U83.A.  The port annotation will still occur.
+  assign \u_div/SumTmp[5][0]  = a[5];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,2367|7): The interconnect source testfixture.u_CONV.add_0_root_add_0_root_add_34_3.U1_5.S is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r627.U83.B.  The port annotation will still occur.
+  assign \u_div/PartRem[8][1]  = a[8];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,2369|7): The interconnect source testfixture.u_CONV.add_0_root_add_0_root_add_34_3.U1_8.S is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r627.U72.A.  The port annotation will still occur.
+  assign \u_div/SumTmp[6][0]  = a[6];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,2368|7): The interconnect source testfixture.u_CONV.add_0_root_add_0_root_add_34_3.U1_6.S is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r627.U86.A.  The port annotation will still occur.
+  assign \u_div/SumTmp[6][0]  = a[6];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,2368|7): The interconnect source testfixture.u_CONV.add_0_root_add_0_root_add_34_3.U1_6.S is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r627.U86.B.  The port annotation will still occur.
+  assign \u_div/SumTmp[1][0]  = a[1];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,2363|7): The interconnect source testfixture.u_CONV.add_0_root_add_0_root_add_34_3.U2.Y is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r627.U21.A.  The port annotation will still occur.
+  assign \u_div/SumTmp[1][0]  = a[1];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,2363|7): The interconnect source testfixture.u_CONV.add_0_root_add_0_root_add_34_3.U2.Y is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r627.U21.B.  The port annotation will still occur.
+  assign \u_div/SumTmp[2][0]  = a[2];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,2364|7): The interconnect source testfixture.u_CONV.add_0_root_add_0_root_add_34_3.U1_2.S is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r627.U82.A.  The port annotation will still occur.
+  assign \u_div/SumTmp[2][0]  = a[2];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,2364|7): The interconnect source testfixture.u_CONV.add_0_root_add_0_root_add_34_3.U1_2.S is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r627.U82.B.  The port annotation will still occur.
+  assign \u_div/PartRem[9][3]  = a[11];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,2372|7): The interconnect source testfixture.u_CONV.add_0_root_add_0_root_add_34_3.U1_11.S is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r627.U76.A.  The port annotation will still occur.
+  assign \u_div/PartRem[9][4]  = a[12];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,2373|7): The interconnect source testfixture.u_CONV.add_0_root_add_0_root_add_34_3.U1_12.Y is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r627.U12.B.  The port annotation will still occur.
+  assign \u_div/PartRem[9][4]  = a[12];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,2373|7): The interconnect source testfixture.u_CONV.add_0_root_add_0_root_add_34_3.U1_12.Y is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r627.U80.A.  The port annotation will still occur.
+  assign \u_div/PartRem[9][3]  = a[11];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,2372|7): The interconnect source testfixture.u_CONV.add_0_root_add_0_root_add_34_3.U1_11.S is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r627.U10.A.  The port annotation will still occur.
+  assign \u_div/PartRem[9][3]  = a[11];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,2372|7): The interconnect source testfixture.u_CONV.add_0_root_add_0_root_add_34_3.U1_11.S is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r627.U77.A.  The port annotation will still occur.
+  assign \u_div/PartRem[9][2]  = a[10];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,2371|7): The interconnect source testfixture.u_CONV.add_0_root_add_0_root_add_34_3.U1_10.S is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r627.U11.A.  The port annotation will still occur.
+  assign \u_div/PartRem[9][2]  = a[10];
+       |
+ncelab: *W,SDFNCAP (./CONV_syn.v,2371|7): The interconnect source testfixture.u_CONV.add_0_root_add_0_root_add_34_3.U1_10.S is separated by a unidirectional continuous assign from the destination testfixture.u_CONV.r627.U19.A.  The port annotation will still occur.
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                 3509     134
+		UDPs:                     773       4
+		Primitives:              9856       8
+		Timing outputs:          4499      50
+		Registers:                696      32
+		Scalar wires:            5387       -
+		Expanded wires:            40       2
+		Vectored wires:             2       -
+		Always blocks:              4       4
+		Initial blocks:            12      12
+		Cont. assignments:          0      18
+		Pseudo assignments:         3       3
+		Timing checks:           4980     699
+		Interconnect:            9529       -
+		Delayed tcheck signals:  1583     683
+		Simulation timescale:     1ps
+	Writing initial simulation snapshot: worklib.testfixture:v
+Loading snapshot worklib.testfixture:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+-----------------------------------------------------
+
+START!!! Simulation Start .....
+
+-----------------------------------------------------
+
+Layer 0 (Convolutional Output) with Kernel 0 is correct !
+Layer 1 (Max-pooling Output) with Kernel 0 is correct!
+ 
+-----------------------------------------------------
+
+--------------------- S U M M A R Y -----------------
+
+Congratulations! Layer 0 data have been generated successfully! The result is PASS!!
+
+Congratulations! Layer 1 data have been generated successfully! The result is PASS!!
+
+-----------------------------------------------------
+
+Simulation complete via $finish(1) at time 1260690846 PS + 0
+./testfixture.v:191       #(`CYCLE/2); $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Nov 01, 2021 at 23:19:57 CST  (total: 00:00:13)

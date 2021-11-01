@@ -1,0 +1,61 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Nov 02, 2021 at 00:46:20 CST
+ncverilog
+	CONV.v
+	testfixture.v
+	+access+r
+file: CONV.v
+	module worklib.CONV:v
+		errors: 0, warnings: 0
+file: testfixture.v
+	module worklib.testfixture:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.CONV:v <0x3a6796ca>
+			streams:  81, words: 42465
+		worklib.testfixture:v <0x146cfcbd>
+			streams:  24, words: 25335
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  2       2
+		Registers:               47      47
+		Scalar wires:             6       -
+		Vectored wires:          18       -
+		Always blocks:           23      23
+		Initial blocks:          11      11
+		Cont. assignments:       12      12
+		Pseudo assignments:       3       3
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.testfixture:v
+Loading snapshot worklib.testfixture:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+-----------------------------------------------------
+
+START!!! Simulation Start .....
+
+-----------------------------------------------------
+
+Layer 0 (Convolutional Output) with Kernel 0 is correct !
+Layer 1 (Max-pooling Output) with Kernel 0 is correct!
+ 
+-----------------------------------------------------
+
+--------------------- S U M M A R Y -----------------
+
+Congratulations! Layer 0 data have been generated successfully! The result is PASS!!
+
+Congratulations! Layer 1 data have been generated successfully! The result is PASS!!
+
+-----------------------------------------------------
+
+Simulation complete via $finish(1) at time 1260690 NS + 0
+./testfixture.v:191       #(`CYCLE/2); $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Nov 02, 2021 at 00:46:22 CST  (total: 00:00:02)

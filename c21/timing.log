@@ -1,0 +1,160 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : geofence
+Version: N-2017.09-SP2
+Date   : Mon Oct 18 14:24:09 2021
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: mul_c_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sqrt_o2_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  geofence           tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  mul_c_reg[1]/CK (DFFRX1)                                0.00       0.50 r
+  mul_c_reg[1]/Q (DFFRX1)                                 0.75       1.25 f
+  m2/i_a[1] (mul_0)                                       0.00       1.25 f
+  m2/mult_712/a[1] (mul_0_DW_mult_uns_2)                  0.00       1.25 f
+  m2/mult_712/U284/Y (CLKBUFX3)                           0.70       1.95 f
+  m2/mult_712/U305/Y (XNOR2X1)                            0.49       2.45 r
+  m2/mult_712/U280/Y (OAI22XL)                            0.43       2.88 f
+  m2/mult_712/U294/Y (NAND2X1)                            0.38       3.26 r
+  m2/mult_712/U304/Y (CLKINVX1)                           0.20       3.46 f
+  m2/mult_712/U23/CO (ADDFXL)                             0.51       3.96 f
+  m2/mult_712/U22/CO (ADDFXL)                             0.53       4.49 f
+  m2/mult_712/U21/CO (ADDFXL)                             0.53       5.02 f
+  m2/mult_712/U20/CO (ADDFXL)                             0.53       5.55 f
+  m2/mult_712/U19/CO (ADDFXL)                             0.53       6.07 f
+  m2/mult_712/U18/CO (ADDFXL)                             0.53       6.61 f
+  m2/mult_712/U272/CO (ADDFX2)                            0.40       7.01 f
+  m2/mult_712/U16/CO (ADDFXL)                             0.50       7.51 f
+  m2/mult_712/U273/CO (ADDFX2)                            0.40       7.91 f
+  m2/mult_712/U14/CO (ADDFXL)                             0.50       8.41 f
+  m2/mult_712/U274/CO (ADDFX2)                            0.40       8.81 f
+  m2/mult_712/U12/CO (ADDFXL)                             0.50       9.31 f
+  m2/mult_712/U275/CO (ADDFX2)                            0.40       9.70 f
+  m2/mult_712/U10/CO (ADDFXL)                             0.50      10.21 f
+  m2/mult_712/U276/CO (ADDFX2)                            0.40      10.60 f
+  m2/mult_712/U8/CO (ADDFXL)                              0.50      11.10 f
+  m2/mult_712/U278/CO (ADDFX2)                            0.40      11.50 f
+  m2/mult_712/U6/CO (ADDFXL)                              0.50      12.00 f
+  m2/mult_712/U277/CO (ADDFX2)                            0.40      12.40 f
+  m2/mult_712/U331/Y (XOR2X1)                             0.31      12.72 r
+  m2/mult_712/product[21] (mul_0_DW_mult_uns_2)           0.00      12.72 r
+  m2/o_answer[21] (mul_0)                                 0.00      12.72 r
+  U5652/Y (CLKINVX1)                                      0.39      13.10 f
+  U5341/Y (AND2X2)                                        0.55      13.66 f
+  U4896/Y (CLKBUFX3)                                      0.78      14.43 f
+  U5334/Y (MXI2X1)                                        0.61      15.04 r
+  U4904/Y (CLKINVX1)                                      0.24      15.28 f
+  U4902/Y (AO21X1)                                        0.43      15.70 f
+  U4289/Y (NAND2X1)                                       0.52      16.23 r
+  U4157/Y (INVX3)                                         0.35      16.58 f
+  U5360/Y (AO21X1)                                        0.39      16.97 f
+  U4024/Y (CLKBUFX3)                                      0.65      17.61 f
+  U4836/Y (INVX3)                                         0.71      18.32 r
+  U4310/Y (MXI2X1)                                        0.70      19.02 r
+  U4874/Y (CLKINVX1)                                      0.27      19.30 f
+  U4873/Y (NAND2X1)                                       0.21      19.51 r
+  U4872/Y (AO22X1)                                        0.42      19.93 r
+  U4306/Y (CLKINVX1)                                      0.18      20.11 f
+  U4305/Y (NAND2X1)                                       0.29      20.40 r
+  U4148/Y (CLKINVX1)                                      0.19      20.59 f
+  U4147/Y (NAND2X1)                                       0.70      21.29 r
+  U4150/Y (NAND2X1)                                       0.51      21.81 f
+  U4914/Y (AOI2BB1X1)                                     0.29      22.10 r
+  U4913/Y (OR2X1)                                         0.23      22.33 r
+  U4007/Y (CLKBUFX3)                                      0.51      22.84 r
+  U4361/Y (INVX3)                                         0.54      23.38 f
+  U4313/Y (MXI2X1)                                        0.64      24.03 r
+  U4842/Y (CLKINVX1)                                      0.28      24.30 f
+  U4841/Y (NAND2X1)                                       0.21      24.52 r
+  U4840/Y (AO22X1)                                        0.41      24.93 r
+  U5365/Y (AO22X1)                                        0.43      25.36 r
+  U3827/Y (AOI22X1)                                       0.28      25.64 f
+  U4380/Y (AND2X2)                                        0.37      26.01 f
+  U4165/Y (AND2X2)                                        0.30      26.31 f
+  U4116/Y (NAND2X1)                                       0.28      26.60 r
+  U4098/Y (CLKINVX1)                                      0.19      26.79 f
+  U4097/Y (NAND2X1)                                       0.40      27.19 r
+  U4112/Y (NAND2X1)                                       0.27      27.46 f
+  U4802/Y (OAI31XL)                                       0.54      28.00 r
+  U4801/Y (CLKBUFX3)                                      0.60      28.60 r
+  U4379/Y (CLKINVX1)                                      0.23      28.83 f
+  U3989/Y (CLKBUFX3)                                      0.83      29.66 f
+  U4847/Y (AO22X1)                                        0.70      30.36 f
+  U4866/Y (AO22X1)                                        0.52      30.88 f
+  U4365/Y (AO22X1)                                        0.51      31.39 f
+  U4857/Y (AO22X1)                                        0.51      31.91 f
+  U4860/Y (AO22X1)                                        0.52      32.42 f
+  U5357/Y (AO22X1)                                        0.52      32.95 f
+  U3824/Y (AOI22X1)                                       0.46      33.40 r
+  U4301/Y (NAND2X1)                                       0.28      33.69 f
+  U4168/Y (CLKINVX1)                                      0.23      33.91 r
+  U4120/Y (AND2X2)                                        0.28      34.20 r
+  U4110/Y (NAND2X1)                                       0.21      34.41 f
+  U4100/Y (CLKINVX1)                                      0.21      34.62 r
+  U4114/Y (NAND2X1)                                       0.22      34.84 f
+  U4274/Y (OAI32X1)                                       0.53      35.37 r
+  U4734/Y (OAI32X4)                                       0.45      35.82 f
+  U4387/Y (CLKINVX1)                                      0.15      35.96 r
+  U4386/Y (BUFX4)                                         0.61      36.57 r
+  add_697_I10_C650/B[1] (geofence_DW01_add_64)            0.00      36.57 r
+  add_697_I10_C650/U222/Y (NAND2X1)                       0.35      36.92 f
+  add_697_I10_C650/U153/Y (MXI2X1)                        0.47      37.39 r
+  add_697_I10_C650/U208/Y (CLKINVX1)                      0.36      37.76 f
+  add_697_I10_C650/U131/Y (MXI2X1)                        0.51      38.27 r
+  add_697_I10_C650/U126/Y (INVX3)                         0.46      38.73 f
+  add_697_I10_C650/U180/Y (XOR2X1)                        0.30      39.02 r
+  add_697_I10_C650/SUM[3] (geofence_DW01_add_64)          0.00      39.02 r
+  U3813/Y (CLKMX2X2)                                      0.41      39.43 r
+  add_697_I11_C650/A[5] (geofence_DW01_add_66)            0.00      39.43 r
+  add_697_I11_C650/U89/Y (NOR2X1)                         0.21      39.64 f
+  add_697_I11_C650/U90/Y (OAI21XL)                        0.49      40.14 r
+  add_697_I11_C650/U95/Y (AOI21X1)                        0.24      40.38 f
+  add_697_I11_C650/U93/Y (OAI21XL)                        0.48      40.86 r
+  add_697_I11_C650/U109/Y (AOI21X1)                       0.24      41.11 f
+  add_697_I11_C650/U107/Y (OAI21XL)                       0.48      41.59 r
+  add_697_I11_C650/U98/Y (AOI21X1)                        0.23      41.82 f
+  add_697_I11_C650/U97/Y (NOR2X1)                         0.24      42.06 r
+  add_697_I11_C650/U96/Y (NAND2X1)                        0.15      42.22 f
+  add_697_I11_C650/U75/Y (OR2X1)                          0.30      42.52 f
+  add_697_I11_C650/U122/Y (OAI21XL)                       0.28      42.79 r
+  add_697_I11_C650/U126/Y (AOI21X1)                       0.21      43.00 f
+  add_697_I11_C650/U124/Y (XOR2X1)                        0.24      43.24 f
+  add_697_I11_C650/SUM[17] (geofence_DW01_add_66)         0.00      43.24 f
+  U6152/Y (CLKMX2X2)                                      0.25      43.49 f
+  U6151/Y (MXI2X1)                                        0.24      43.73 r
+  sqrt_o2_reg[0]/D (DFFRX2)                               0.00      43.73 r
+  data arrival time                                                 43.73
+
+  clock clk (rise edge)                                  50.00      50.00
+  clock network delay (ideal)                             0.50      50.50
+  clock uncertainty                                      -0.10      50.40
+  sqrt_o2_reg[0]/CK (DFFRX2)                              0.00      50.40 r
+  library setup time                                     -0.22      50.18
+  data required time                                                50.18
+  --------------------------------------------------------------------------
+  data required time                                                50.18
+  data arrival time                                                -43.73
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.46
+
+
+1

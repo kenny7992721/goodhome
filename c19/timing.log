@@ -1,0 +1,119 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : CONV
+Version: N-2017.09-SP2
+Date   : Mon Nov  1 23:19:07 2021
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: kernel_shift_y_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: iaddr[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CONV               tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  kernel_shift_y_reg[1]/CK (DFFQX1)                       0.00       0.50 r
+  kernel_shift_y_reg[1]/Q (DFFQX1)                        0.69       1.19 r
+  add_34_2/B[1] (CONV_DW01_add_15)                        0.00       1.19 r
+  add_34_2/U1_1/CO (ADDFXL)                               0.91       2.10 r
+  add_34_2/U1_2/CO (ADDFXL)                               0.50       2.60 r
+  add_34_2/U1_3/CO (ADDFXL)                               0.50       3.10 r
+  add_34_2/U1_4/CO (ADDFXL)                               0.50       3.59 r
+  add_34_2/U1_5/CO (ADDFXL)                               0.50       4.09 r
+  add_34_2/U1_6/S (ADDFXL)                                0.81       4.90 r
+  add_34_2/SUM[6] (CONV_DW01_add_15)                      0.00       4.90 r
+  U1360/CO (ADDFXL)                                       0.85       5.75 r
+  mult_34/U6/CO (ADDFXL)                                  0.50       6.25 r
+  U1362/CO (ADDFXL)                                       0.50       6.74 r
+  U1359/CO (ADDFXL)                                       0.50       7.24 r
+  U1344/CO (ADDFXL)                                       0.49       7.73 r
+  U1735/Y (XOR2X1)                                        0.29       8.03 r
+  U1736/Y (XOR2X1)                                        0.39       8.42 r
+  add_0_root_add_0_root_add_34_3/B[12] (CONV_DW01_add_13)
+                                                          0.00       8.42 r
+  add_0_root_add_0_root_add_34_3/U1_12/Y (XOR3X2)         0.53       8.95 r
+  add_0_root_add_0_root_add_34_3/SUM[12] (CONV_DW01_add_13)
+                                                          0.00       8.95 r
+  r627/a[12] (CONV_DW_div_uns_6)                          0.00       8.95 r
+  r627/U12/Y (AND2X2)                                     0.49       9.44 r
+  r627/U86/Y (MX2X1)                                      0.78      10.22 r
+  r627/U9/Y (OR2X6)                                       0.24      10.46 r
+  r627/U112/Y (OR2X1)                                     0.31      10.77 r
+  r627/U40/Y (OR2X1)                                      0.34      11.11 r
+  r627/U43/Y (OR2X1)                                      0.34      11.45 r
+  r627/U106/Y (AND2X2)                                    0.23      11.69 r
+  r627/U1/Y (OR2X8)                                       0.20      11.89 r
+  r627/U83/Y (MX2X1)                                      0.44      12.33 f
+  r627/U46/Y (OR2X1)                                      0.43      12.75 f
+  r627/U42/Y (OR2X1)                                      0.40      13.15 f
+  r627/U113/Y (OR2X1)                                     0.40      13.55 f
+  r627/U39/Y (OR2X1)                                      0.39      13.94 f
+  r627/U105/Y (AND2X2)                                    0.25      14.19 f
+  r627/U3/Y (OR2X8)                                       0.23      14.42 f
+  r627/U85/Y (MX2X1)                                      0.42      14.84 f
+  r627/U48/Y (OR2X1)                                      0.43      15.27 f
+  r627/U114/Y (OR2X1)                                     0.40      15.67 f
+  r627/U25/Y (OR2X1)                                      0.39      16.06 f
+  r627/U26/Y (OR2X1)                                      0.40      16.46 f
+  r627/U99/Y (AND2X2)                                     0.23      16.70 f
+  r627/U27/Y (OR2X2)                                      0.46      17.15 f
+  r627/U84/Y (MX2X1)                                      0.74      17.90 r
+  r627/U5/Y (OR2X8)                                       0.25      18.15 r
+  r627/U115/Y (OR2X1)                                     0.31      18.46 r
+  r627/U37/Y (OR2X1)                                      0.35      18.81 r
+  r627/U95/Y (OR2X1)                                      0.34      19.15 r
+  r627/U89/Y (AND2X2)                                     0.23      19.39 r
+  r627/U2/Y (OR2X8)                                       0.21      19.60 r
+  r627/U82/Y (MX2X1)                                      0.44      20.03 f
+  r627/U47/Y (OR2X1)                                      0.43      20.46 f
+  r627/U41/Y (OR2X1)                                      0.39      20.85 f
+  r627/U38/Y (OR2X1)                                      0.40      21.24 f
+  r627/U96/Y (OR2X1)                                      0.39      21.64 f
+  r627/U90/Y (AND2X2)                                     0.23      21.87 f
+  r627/U13/Y (OR2X2)                                      0.46      22.32 f
+  r627/U21/Y (MXI2X1)                                     0.47      22.79 r
+  r627/U128/Y (CLKINVX1)                                  0.43      23.21 f
+  r627/U28/Y (OR2X1)                                      0.44      23.65 f
+  r627/U36/Y (OR2X1)                                      0.39      24.04 f
+  r627/U35/Y (OR2X1)                                      0.39      24.43 f
+  r627/U34/Y (OR2X1)                                      0.40      24.83 f
+  r627/U50/Y (AND2XL)                                     0.29      25.11 f
+  r627/U24/Y (OR2X2)                                      0.49      25.60 f
+  r627/U33/Y (MXI2X1)                                     0.36      25.97 r
+  r627/remainder[6] (CONV_DW_div_uns_6)                   0.00      25.97 r
+  U1346/Y (XOR2X2)                                        0.25      26.22 r
+  U1343/Y (OR3X2)                                         0.21      26.42 r
+  U1342/Y (NAND2X1)                                       0.12      26.55 f
+  U1276/Y (BUFX4)                                         0.38      26.92 f
+  U1280/Y (INVX3)                                         0.67      27.60 r
+  U295/Y (AO22X4)                                         2.13      29.73 r
+  iaddr[0] (out)                                          0.00      29.73 r
+  data arrival time                                                 29.73
+
+  clock clk (rise edge)                                  30.00      30.00
+  clock network delay (ideal)                             0.50      30.50
+  clock uncertainty                                      -0.10      30.40
+  output external delay                                  -0.50      29.90
+  data required time                                                29.90
+  --------------------------------------------------------------------------
+  data required time                                                29.90
+  data arrival time                                                -29.73
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.17
+
+
+1
